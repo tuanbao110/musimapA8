@@ -1,0 +1,65 @@
+
+/*.home-screen {
+  width: 100%;
+  min-width: 1440px;
+  height: 100%;
+  min-height: 1024px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+}
+*/
+
+.navbar {
+  position: relative;
+}
+
+/* Dropdown Button */
+.dropbtn {
+
+    color: black;
+    padding: 0px 4px;
+    font-size: 19px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Searchbar Animation for fun */
+input[type=text] {
+  width: 105px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 35vw;
+}
+
+.textbody {
+  padding: 10px;
+}
+
+.show {display:block;}
+
+

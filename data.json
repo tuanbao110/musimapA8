@@ -1,0 +1,76 @@
+{
+	"artists": [
+		{
+			"name": "Black Sabbath",
+			"genre": "Heavy Metal",
+			"description": "One of the first heavy metal bands, and one of the best.",
+			"imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Sabs.jpg/1200px-Sabs.jpg"			
+		},
+		{
+			"name": "Iron Maiden",
+			"genre": "Heavy Metal",
+			"description": "A shining example of why heavy metal is great.",
+			"imageURL": "https://img.discogs.com/HM5gybDrzcwiltUpKA2H_KufjFQ=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-1164331-1197405059.jpeg.jpg"			
+		},
+		{
+			"name": "Judas Priest",
+			"genre": "Heavy Metal",
+			"description": "They're called the 'Metal Gods' for a reason.",
+			"imageURL": "https://images-na.ssl-images-amazon.com/images/I/B10R1yhJ3rS._SL1000_.png"			
+		},
+		{
+			"name": "Megadeth",
+			"genre": "Thrash Metal",
+			"description": "These guys put out some excellent music.",
+			"imageURL": "https://www.metal-archives.com/images/1/3/8/138_photo.jpg?4147"		
+		},
+		{
+			"name": "Death",
+			"genre": "Death Metal",
+			"description": "They pioneered an entire genre of metal - enough said.",
+			"imageURL": "https://www.heavymetalonline.co.uk/wp-content/uploads/2015/05/TP034.jpg"
+		},
+		{
+			"name": "Emperor",
+			"genre": "Black Metal",
+			"description": "Easily one of the best black metal bands of all time.",
+			"imageURL": "https://www.metal-archives.com/images/3/0/30_photo.jpg?2652"
+		},
+        {
+            "name": "Anthrax",
+            "genre": "Thrash Metal",
+            "description": "One of the most innovative metal groups out there.",
+            "imageURL": "https://upload.wikimedia.org/wikipedia/commons/0/05/Anthrax_Rockavaria_2016_%2812_von_12%29.jpg"
+        },
+        {
+            "name": "Pestilence",
+            "genre": "Death Metal",
+            "description": "Gut-churning guitars and tortured vocals? Yes, please!",
+            "imageURL": "https://img.discogs.com/mXo0HHeR6ToNu2CuBo7BJv_p5s8=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-580679-1348023351-2665.jpeg.jpg"
+        },
+        {
+            "name": "Mayhem",
+            "genre": "Black Metal",
+            "description": "If you're looking for true black metal, you've found it.",
+            "imageURL": "http://i1.wp.com/hellhammerdrummer.com/wp-content/uploads/mayhem-live-in-leipzig.jpg"
+        },
+        {
+            "name": "Testament",
+            "genre": "Thrash Metal",
+            "description": "If you like thrash metal but want even more heaviness, these guys are for you.",
+            "imageURL": "https://www.metal-archives.com/images/7/0/70_photo.jpg"
+        },
+        {
+            "name": "Morbid Angel",
+            "genre": "Death Metal",
+            "description": "Their music is brutal, unrelenting, and a perfect representation of death metal.",
+            "imageURL": "https://www.metal-archives.com/images/6/8/68_logo.jpg"
+        },
+        {
+            "name": "Dissection",
+            "genre": "Black Metal",
+            "description": "A must listen for those into chilling, abrasive poetry from the frozen north.",
+            "imageURL": "https://images-na.ssl-images-amazon.com/images/I/61sNya34diL._SS500.jpg"
+        }
+	]
+}

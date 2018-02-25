@@ -1,0 +1,10 @@
+{
+	"artists": [
+		{
+			"name": "Black Sabbath",
+			"genre": "Heavy Metal",
+			"description": "One of the first heavy metal bands, and one of the best.",
+			"imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Sabs.jpg/1200px-Sabs.jpg"			
+		}
+	]
+}
