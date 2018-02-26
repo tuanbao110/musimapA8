@@ -36,10 +36,12 @@
                             </div>   
                             <div>
                                 <h3>Artists Found:</h3>
-                                <ul>
+                                <ul style="list-style-type:none">
+                                    {{#each artists}}
                                     <li>
                                         <a href="../artistscreen/{{name}}"><h4>{{name}}</h4></a>
                                     </li>
+                                    {{/each}}
                                 </ul>
                             </div>
                         </div>

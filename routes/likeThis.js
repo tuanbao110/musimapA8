@@ -32,6 +32,12 @@ exports.viewFromArtist = function(req, res) {
             console.log("Found genre match: " + obj.name);
             likeData.artists.push(obj);
         }
+
+        //special case for prog bands
+        if((fromGenre == "Progressive Metal" && obj.genre == "Progressive Death Metal")
+            || (obj.genre == "Progressive Metal" && fromGenre == "Progressive Death Metal")) {
+                likeData.artists.push(obj);
+            }
     }
     
 
