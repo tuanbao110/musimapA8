@@ -16,8 +16,8 @@ exports.view = function(req, res){
     //make set of data not in library
     var notInLibrary = subtract(data, data2);
 
-    //loop through rest of nodes and make them a different color
-    for(var i = 0; i < data.artists.length; i++) {
+    //loop through all nodes
+    /*for(var i = 0; i < data.artists.length; i++) {
         var inLibrary = 0;
         var obj1 = data.artists[i];
         for(var j = 0; j < data2.artists.length; j++) {
@@ -31,14 +31,14 @@ exports.view = function(req, res){
         if(inLibrary == 0) {
             var newNode = {"data": {"id": obj1.name, "label": obj1.name, "genre:": obj1.genre,
             "inLibrary": 'false', "href":"artistscreen/"+obj1.name}};
-            newData.nodes.push(newNode);
+            //newData.nodes.push(newNode);
         }
         else {
             var newNode = {"data": {"id": obj1.name, "label": obj1.name, "genre:": obj1.genre,
             "inLibrary": 'true', "href":"artistscreen/"+obj1.name}};
             newData.nodes.push(newNode);
         }
-    }
+    }*/
 
     //make edges
     for(var i = 0; i < data.artists.length; i++) {
@@ -86,6 +86,43 @@ exports.view = function(req, res){
                 var newEdge = {"data": {"id": obj1.name + ", " + obj2.name,
                     "source": obj1.name, "target": obj2.name}};
                 newData.edges.push(newEdge);
+            }
+        }
+    }
+
+    //add nodes in library
+    for(var j = 0; j < data2.artists.length; j++) {
+        var obj2 = data2.artists[j];
+        var newNode = {"data": {"id": obj2.name, "label": obj2.name, "genre:": obj2.genre,
+            "inLibrary": 'true', "href":"artistscreen/"+obj2.name}};
+        newData.nodes.push(newNode);
+
+        //add nodes next to new one to the map. Skip those in library
+        for(var i = 0; i < data.artists.length; i++) {
+            var hasEdge = false;
+            var inLibrary = false;
+            var obj1 = data.artists[i];
+
+            //check if in library
+            for(var k = 0; k < data2.artists.length; k++) {
+                var obj3 = data2.artists[k];
+                if(obj1.name == obj3.name) {
+                    inLibrary = true;
+                }
+            }
+
+            //only do this if not already in library
+            if(inLibrary == false) {
+                //see if there's an edge between potential node and current
+                for(var e = 0; e < newData.edges.length; e++) {
+                    var edge = newData.edges[e].data;
+                    if((obj2.name == edge.source && obj1.name == edge.target)
+                    || (obj1.name == edge.source && obj2.name == edge.target)) {
+                        var newNode1 = {"data": {"id": obj1.name, "label": obj1.name, "genre:": obj1.genre,
+            "inLibrary": 'false', "href":"artistscreen/"+obj1.name}};
+                        newData.nodes.push(newNode1);
+                    }
+                }
             }
         }
     }
