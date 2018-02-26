@@ -71,6 +71,42 @@
             "genre": "Black Metal",
             "description": "A must listen for those into chilling, abrasive poetry from the frozen north.",
             "imageURL": "https://images-na.ssl-images-amazon.com/images/I/61sNya34diL._SS500.jpg"
+        },
+        {
+            "name": "Opeth",
+            "genre": "Progressive Death Metal",
+            "description": "From mellow guitar licks to full-blown death growls, Opeth has you covered.",
+            "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Opeth_%40_Eistnaflug_2016_25.jpg/1200px-Opeth_%40_Eistnaflug_2016_25.jpg"
+        },
+        {
+            "name": "Atheist",
+            "genre": "Progressive Death Metal",
+            "description": "Like extreme tempo changes and meandering time signatures? You're in the right place.",
+            "imageURL": "https://vignette.wikia.nocookie.net/logopedia/images/3/3a/Atheist_band_logo.jpg/revision/latest?cb=20160308195645"
+        },
+        {
+            "name": "Kreator",
+            "genre": "Thrash Metal",
+            "description": "A darker, heavier brand of thrash - you have been warned.",
+            "imageURL": "https://i.pinimg.com/originals/a9/2a/57/a92a57794be331d1399d60010ce63774.jpg"
+        },
+        {
+            "name": "Immortal",
+            "genre": "Black Metal",
+            "description": "Their music conjures up bitter winds from the remorseless winters of Scandanavia.",
+            "imageURL": "https://i0.wp.com/www.metalinjection.net/wp-content/uploads/2015/02/IMMORTAL-band.jpg?fit=700%2C467"
+        },
+        {
+            "name": "Blotted Science",
+            "genre": "Progressive Metal",
+            "description": "A technical, instrumental, prog metal supergroup. What can go wrong?",
+            "imageURL": "https://images-na.ssl-images-amazon.com/images/I/512K-P3TaaL._SX466_.jpg"
+        },
+        {
+            "name": "Dream Theater",
+            "genre": "Progressive Metal",
+            "description": "These guys are the definitive prog metal band.",
+            "imageURL": "http://assets.teamrock.com/image/dfbe60e2-7408-4d0e-a993-70ef90fa97ab?w=800"
         }
 	]
 }

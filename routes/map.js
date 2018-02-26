@@ -73,6 +73,20 @@ exports.view = function(req, res){
                     "source": obj1.name, "target": obj2.name}};
                 newData.edges.push(newEdge);
             }
+
+            //special case: Death and Atheist
+            if((obj1.name == "Death") && (obj2.name == "Atheist")) {
+                var newEdge = {"data": {"id": obj1.name + ", " + obj2.name,
+                    "source": obj1.name, "target": obj2.name}};
+                newData.edges.push(newEdge);
+            }
+
+            //special case: Atheist and Blotted Science
+            if((obj1.name == "Atheist") && (obj2.name == "Blotted Science")) {
+                var newEdge = {"data": {"id": obj1.name + ", " + obj2.name,
+                    "source": obj1.name, "target": obj2.name}};
+                newData.edges.push(newEdge);
+            }
         }
     }
 
