@@ -23,7 +23,9 @@ exports.addArtist = function(req, res) {
 
         if(obj.name == addedName) {
             inLibrary = 1;
-            console.log(addedName + " already in library.");
+
+            //remove if already in library
+            data2.artists.splice(i, 1);
         }
     }
 
@@ -43,8 +45,6 @@ exports.addArtist = function(req, res) {
         }
         data2.artists.push(newArtist);
     }
-
-    console.log(data2);
 
     res.render('add', data2);
 };

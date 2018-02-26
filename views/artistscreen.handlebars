@@ -47,7 +47,11 @@
                                         </div>
                                     </div>
                                     <div>
+                                        {{#if inLibrary}}
+                                        <div><a href="../add/{{name}}"><h3>Remove From Library</h3></a></div>
+                                        {{else}}
                                         <div><a href="../add/{{name}}"><h3>Add to Library</h3></a></div>
+                                        {{/if}}
                                         <div><a href="../likeThis/{{name}}"><h3>More Like This</h3></a></div>
                                     </div>
                                 </div>
