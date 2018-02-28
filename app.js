@@ -52,6 +52,8 @@ app.get('/menu', menu.view);
 app.get('/results', results.view);
 app.get('/add/:name', library.addArtist);
 app.get('/add', library.addArtist);
+app.get('/addAlt', library.addAlt);
+app.get('/addAlt/:name', library.addAlt);
 app.get('/map', map.view);
 
 // Example route
