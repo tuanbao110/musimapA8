@@ -15,35 +15,37 @@ exports.addArtist = function(req, res) {
 
     console.log("Adding artist: " + addedName);
 
-    var inLibrary = 0;
+    if(addedName != null) {
+        var inLibrary = 0;
 
-    //check if already in library
-    for(var i = 0; i < data2.artists.length; i++) {
-        var obj = data2.artists[i];
-
-        if(obj.name == addedName) {
-            inLibrary = 1;
-
-            //remove if already in library
-            data2.artists.splice(i, 1);
-        }
-    }
-
-    if(inLibrary == 0) {
-        
-        var newArtist;
-
-        //look for values in data
-        for(var i = 0; i < data.artists.length; i++) {
-            var obj = data.artists[i];
+        //check if already in library
+        for(var i = 0; i < data2.artists.length; i++) {
+            var obj = data2.artists[i];
 
             if(obj.name == addedName) {
-                newArtist = obj;
-            }
+                inLibrary = 1;
 
-        
+                //remove if already in library
+                data2.artists.splice(i, 1);
+            }
         }
-        data2.artists.push(newArtist);
+
+        if(inLibrary == 0) {
+
+            var newArtist;
+
+            //look for values in data
+            for(var i = 0; i < data.artists.length; i++) {
+                var obj = data.artists[i];
+
+                if(obj.name == addedName) {
+                    newArtist = obj;
+                }
+
+
+            }
+            data2.artists.push(newArtist);
+        }
     }
 
     res.render('add', data2);

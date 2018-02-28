@@ -47,11 +47,11 @@ app.get('/artistscreen/:name', artistscreen.viewName);
 app.get('/help', help.view);
 app.get('/', login.view);
 app.get('/index', index.view);
-app.get('/library', library.view);
 app.get('/likeThis/:name', likeThis.viewFromArtist);
 app.get('/menu', menu.view);
 app.get('/results', results.view);
 app.get('/add/:name', library.addArtist);
+app.get('/add', library.addArtist);
 app.get('/map', map.view);
 
 // Example route
