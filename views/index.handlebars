@@ -18,14 +18,10 @@
 
             <!-- Container for Dropdown and Search bar -->
             <div class="container">
-                <div><h2>MusiMap Home</h2></div>
-                <!-- Navigation Menu/Dropdown Menu -->
-                <div class="navmenu">
+                <div><h2>MusiMap</h2></div>
                     <div class="dropdown">
                         <button onclick="myFunction()" class="dropbtn" ><i class="fa fa-bars dropbtn"></i></button>
                         <div id="myDropdown" class="dropdown-content">
-                            <a href="index">Home</a>
-                            <a href="add">My Library</a>
                             <a href="help">Help</a>
                         </div>
                         
@@ -34,6 +30,14 @@
                         <input id="searchbar" size="32" type="text" name="searchName" placeholder="Search Here..." required>
                         <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
                     </form>
+                </div>
+                <div class="tabs-menu">
+                    <a class="tab-link w--current w-inline-block w-tab-link" data-w-tab="tab2" href="index">
+                        <div class="text-block">Home</div></a>
+                   <!-- <a class="tab-link w-inline-block w-tab-link" href="#">
+                        <div class="text-block">Search</div></a> -->
+                        <a class="tab-link w-inline-block w-tab-link" data-w-tab="tab3" href="add">
+                        <div class="text-block">Library</div></a>
                 </div>
             </div>
         </nav>

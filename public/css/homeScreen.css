@@ -10,10 +10,6 @@ margin: 0px;
 }
  */
 
-.navbar {
-    position: relative;
-}
-
 /* Dropdown Button */
 .dropbtn {
 
@@ -57,7 +53,7 @@ input[type=text]:focus {
 }
 
 .textbody {
-    padding: 10px;
+    margin: 10px;
 }
 
 .show {display:block;}
@@ -131,4 +127,48 @@ input[type=text]:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.tabs-menu {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.tab-link {
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  background-color: #f1f1f1;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: black;
+}
+
+.tab-link:hover {
+  background-color: #777;
+  color: white;
+}
+
+.tab-link:focus {
+  background-color: #777;
+}
+
+.text-block {
+  text-align: center;
 }
