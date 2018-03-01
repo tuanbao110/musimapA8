@@ -25,15 +25,21 @@
                             <div class="dropdown">
                                 <button onclick="myFunction()" class="dropbtn" ><i class="fa fa-bars dropbtn"></i></button>
                                 <div id="myDropdown" class="dropdown-content">
-                                    <a href="../index">Home</a>
-                                    <a href="../add">My Library</a>
                                     <a href="../help">Help</a>
                                 </div>
                                 <form action="../results" class="pull-right flex-outer" >
                                     <input size="32" type="text" name="searchName" placeholder="Search Here... " required>
                                     <button type="submit"><i class="fa fa-search"></i></button>
                                 </form>
-                            </div>   
+                            </div>
+                            <div class="tabs-menu">
+                                <a class="tab-link w--current w-inline-block w-tab-link" data-w-tab="tab2" href="../index">
+                                    <div class="text-block">Home</div></a>
+                            <!-- <a class="tab-link w-inline-block w-tab-link" href="#">
+                                    <div class="text-block">Search</div></a> -->
+                                    <a class="tab-link w-inline-block w-tab-link" data-w-tab="tab3" href="../add">
+                                    <div class="text-block">Library</div></a>
+                            </div>
                             {{#each artists}}
                             <div class="artists">
                                 <a href="../artistscreen/{{name}}"><h3>{{name}}</h3></a>
