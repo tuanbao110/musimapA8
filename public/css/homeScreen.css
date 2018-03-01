@@ -163,12 +163,12 @@ input[type=text]:focus {
 .tab-link:hover {
   background-color: #777;
   color: white;
+  transition: 0.3s;
 }
 
-.tab-link:focus {
+.tab-link.active {
   background-color: #777;
 }
-
 .text-block {
   text-align: center;
 }
