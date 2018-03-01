@@ -20,11 +20,29 @@
             <div class="container">
                 <div><h2>MusiMap</h2></div>
                     <div class="dropdown">
-                        <button onclick="myFunction()" class="dropbtn" ><i class="fa fa-bars dropbtn"></i></button>
+
+                        <button onclick="myFunction()" class="dropbtn" ><i class="fa fa-question dropbtn"></i></button>
                         <div id="myDropdown" class="dropdown-content">
-                            <a href="help">Help</a>
+                            <h3>Help Topics</h3>
+
+                            <h4>Exploring Music</h4>
+                            <div>
+                                <p>To explore music, you can either search for an artist in the search bar, or while on an artist's page you can press "More like this", where you will be redirected to a list of other artists similar the previous artist.</p>
+                            </div>
+                            <h4>Adding Artists</h4>
+                            <div>
+                                <p>Once you click on an on the Map, you will be taken to that artist's page, where you can press "Add to my library". The next time you access your library, that artist will show up in there.</p>
+                            </div>
+                            <div>
+                                <h4>Map Instructions:</h4>
+                                <p>Zoom in and out on the map by scrolling.</p>
+                                <p>Click and drag whitespace to move the entire map.</p>
+                                <p>Nodes can be moved as well.</p>
+                                <p>Click on a node to go to the artist's page.</p>
+                                <p>Black artists are in your library, gray artists are not.</p>
+                                <p>Refresh the page to reset and randomize the map layout.</p>
+                            </div>
                         </div>
-                        
                     <!-- Searchbar inline block with dropdown menu -->
                     <form action="results" class="pull-right flex-outer" id="search">
                         <input id="searchbar" size="32" type="text" name="searchName" placeholder="Search Here..." required>
@@ -80,5 +98,15 @@
             }
         }
         </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114982356-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114982356-1');
+    </script>
     </body>
 </html>
