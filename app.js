@@ -56,6 +56,19 @@ app.get('/addAlt', library.addAlt);
 app.get('/addAlt/:name', library.addAlt);
 app.get('/map', map.view);
 
+var hbs = require('handlebars');
+hbs.registerHelper('eachRow', function (items, numColumns, options) {
+    var result = '';
+
+    for (var i = 0; i < items.length; i += numColumns) {
+        result += options.fn({
+            columns: items.slice(i, i + numColumns)
+        });
+    }
+
+    return result;
+});
+
 // Example route
 // app.get('/users', user.list);
 

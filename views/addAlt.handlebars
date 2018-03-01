@@ -35,15 +35,18 @@
                                 </form>
                             </div>   
                             <hr>
-                            {{#each artists}}
-                            <div class="group">
-                                <img src="{{imageURL}}" width="250px"alt="{{name}}" class="image">
-                                <div class="overlay">
-                                    <div><a class="text" href="../artistscreen/{{name}}">{{name}}</a></div>
+                            <div class="container">
+                                {{#eachRow artists 4}}
+                                <div class="row">
+                                    {{#each columns}}
+                                    <div class="group">
+                                        <img src="{{imageURL}}" alt="{{name}}" class="image">
+                                        <div class="centered"><a class="text" href="../artistscreen/{{name}}">{{name}}</a></div>
+                                    </div>
+                                    {{/each}}
                                 </div>
+                                {{/eachRow}}
                             </div>
-                            <hr>
-                            {{/each}}
                         </div>
                     </div>
                 </div>
