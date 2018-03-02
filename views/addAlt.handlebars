@@ -69,7 +69,7 @@
                         {{#each columns}}
                         <div class="group">
                             <img src="{{imageURL}}" alt="{{name}}" class="image">
-                            <div class="centered"><a class="text" href="../artistscreen/{{name}}">{{name}}</a></div>
+                            <div class="centered"><a class="text" id="artistLink" href="../artistscreen/{{name}}">{{name}}</a></div>
                         </div>
                         {{/each}}
                     </div>
@@ -77,9 +77,14 @@
                 </div>
         </nav>  
 
-            <script src="../js/jquery-1.11.0.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+            <script src="/js/bootstrap.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
+            <script src="/js/analytics.js"></script>
             <script src="../js/bootstrap.js"></script>
             <script src="../js/bootstrap.min.js"></script>
+            <script src="../js/analytics.js"></script>
             <script>
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
