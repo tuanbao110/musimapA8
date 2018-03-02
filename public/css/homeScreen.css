@@ -58,10 +58,15 @@ input[type=text]:focus {
 }
 
 #search {
-    display: inline-block;
+    float: left;
 }
 .textbody {
     margin: 10px;
+    text-align: center;
+}
+.textbody h4 {
+    text-align: center;
+    display: block;
 }
 
 .show {display:block;}
