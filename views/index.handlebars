@@ -15,24 +15,14 @@
     <body>
         <!-- Navbar - Will keep for future styling... -->
         <nav class="navbar">
-
             <!-- Container for Dropdown and Search bar -->
             <div class="container">
                 <div><h2>MusiMap</h2></div>
                     <div class="dropdown">
-
                         <button onclick="myFunction()" class="dropbtn" ><i class="fa fa-question dropbtn"></i></button>
                         <div id="myDropdown" class="dropdown-content">
                             <h3>Help Topics</h3>
 
-                            <h4>Exploring Music</h4>
-                            <div>
-                                <p>To explore music, you can either search for an artist in the search bar, or while on an artist's page you can press "More like this", where you will be redirected to a list of other artists similar the previous artist.</p>
-                            </div>
-                            <h4>Adding Artists</h4>
-                            <div>
-                                <p>Once you click on an on the Map, you will be taken to that artist's page, where you can press "Add to my library". The next time you access your library, that artist will show up in there.</p>
-                            </div>
                             <div>
                                 <h4>Map Instructions:</h4>
                                 <p>Zoom in and out on the map by scrolling.</p>
@@ -42,7 +32,20 @@
                                 <p>Black artists are in your library, gray artists are not.</p>
                                 <p>Refresh the page to reset and randomize the map layout.</p>
                             </div>
+                            <h4>Exploring Music</h4>
+                            <div>
+                                <p>To explore music, you can either search for an artist in the search bar, 
+                                    or while on an artist's page you can press "More like this", where you will 
+                                    be redirected to a list of other artists similar the previous artist.</p>
+                            </div>
+                            <h4>Adding Artists</h4>
+                            <div>
+                                <p>Once you click on an on the Map, you will be taken to that artist's page, 
+                                    where you can press "Add to my library". The next time you access your 
+                                    library, that artist will show up in there.</p>
+                            </div>
                         </div>
+                    </div>
                     <!-- Searchbar inline block with dropdown menu -->
                     <form action="results" class="pull-right flex-outer" id="search">
                         <input id="searchbar" size="32" type="text" name="searchName" placeholder="Search Here..." required>
@@ -55,7 +58,7 @@
                    <!-- <a class="tab-link w-inline-block w-tab-link" href="#">
                         <div class="text-block">Search</div></a> -->
                         <a class="tab-link" href="../add">
-                        <div class="text-block">Library</div></a>
+                            <div class="text-block">Library</div></a>
                 </div>
             </div>
         </nav>
