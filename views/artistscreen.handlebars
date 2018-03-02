@@ -12,77 +12,79 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div>
-            <!-- Navbar -->
-            <nav class="navbar">
-                <div class="container">
-                    <div><h2>MusiMap Artist Page</h2></div>
-                    <div class="navmenu">
+                <!-- Navbar - Will keep for future styling... -->
+        <nav class="navbar">
+            <!-- Container for Dropdown and Search bar -->
+            <div class="container">
+                <div><h2>MusiMap Artist Page</h2></div>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn" ><i class="fa fa-question dropbtn"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <h3>Help Topics</h3>
 
-                        <div class="searchbar" >
-                            <button onclick="myFunction()" class="dropbtn" ><i class="fa fa-question dropbtn"></i></button>
-                                <div id="myDropdown" class="dropdown-content">
-                                    <h3>Help Topics</h3>
-
-                                    <h4>Exploring Music</h4>
-                                    <div>
-                                        <p>To explore music, you can either search for an artist in the search bar, or while on an artist's page you can press "More like this", where you will be redirected to a list of other artists similar the previous artist.</p>
-                                    </div>
-                                    <h4>Adding Artists</h4>
-                                    <div>
-                                        <p>Once you click on an on the Map, you will be taken to that artist's page, where you can press "Add to my library". The next time you access your library, that artist will show up in there.</p>
-                                    </div>
-                                    <div>
-                                        <h4>Map Instructions:</h4>
-                                        <p>Zoom in and out on the map by scrolling.</p>
-                                        <p>Click and drag whitespace to move the entire map.</p>
-                                        <p>Nodes can be moved as well.</p>
-                                        <p>Click on a node to go to the artist's page.</p>
-                                        <p>Black artists are in your library, gray artists are not.</p>
-                                        <p>Refresh the page to reset and randomize the map layout.</p>
-                                    </div>
-                                </div>
-                                <form action="../results" class="pull-right flex-outer" >
-                                    <input size="32" type="text" name="searchName" placeholder="Search Here... " required>
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                </form>
-                            </div>
-                            <div class="tabs-menu">
-                                <a class="tab-link w--current w-inline-block w-tab-link" data-w-tab="tab2" href="../index">
-                                    <div class="text-block">Home</div></a>
-                            <!-- <a class="tab-link w-inline-block w-tab-link" href="#">
-                                    <div class="text-block">Search</div></a> -->
-                                    <a class="tab-link w-inline-block w-tab-link" data-w-tab="tab3" href="../add">
-                                    <div class="text-block">Library</div></a>
-                            </div>
                             <div>
-                                <div>
-                                    <div>
-                                        <div>
-                                            <h2>{{name}}</h2>
-                                        </div>
-                                        <img src="{{imageURL}}" width="350px" height="350px" alt="Artist Image" class="img-responsive">
-                                    </div>
-                                    <div>
-                                        <div class="bio">
-                                            <h4>Genre:</h4><p>{{genre}}</p>
-                                            <h4>Description:</h4><p>{{description}}</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        {{#if inLibrary}}
-                                        <div><a href="../add/{{name}}"><h3>Remove From Library</h3></a></div>
-                                        {{else}}
-                                        <div><a href="../add/{{name}}"><h3>Add to Library</h3></a></div>
-                                        {{/if}}
-                                        <div><a href="../likeThis/{{name}}"><h3>More Like This</h3></a></div>
-                                    </div>
-                                </div>
+                                <h4>Map Instructions:</h4>
+                                <p>Zoom in and out on the map by scrolling.</p>
+                                <p>Click and drag whitespace to move the entire map.</p>
+                                <p>Nodes can be moved as well.</p>
+                                <p>Click on a node to go to the artist's page.</p>
+                                <p>Black artists are in your library, gray artists are not.</p>
+                                <p>Refresh the page to reset and randomize the map layout.</p>
+                            </div>
+                            <h4>Exploring Music</h4>
+                            <div>
+                                <p>To explore music, you can either search for an artist in the search bar, 
+                                    or while on an artist's page you can press "More like this", where you will 
+                                    be redirected to a list of other artists similar the previous artist.</p>
+                            </div>
+                            <h4>Adding Artists</h4>
+                            <div>
+                                <p>Once you click on an on the Map, you will be taken to that artist's page, 
+                                    where you can press "Add to my library". The next time you access your 
+                                    library, that artist will show up in there.</p>
                             </div>
                         </div>
                     </div>
+                    <!-- Searchbar inline block with dropdown menu -->
+                    <form action="results" class="pull-right flex-outer" id="search">
+                        <input id="searchbar" size="32" type="text" name="searchName" placeholder="Search Here..." required>
+                        <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
-            </nav>
+                <div class="tabs-menu">
+                    <a class="tab-link" href="../index">
+                        <div class="text-block">Home</div></a>
+                   <!-- <a class="tab-link w-inline-block w-tab-link" href="#">
+                        <div class="text-block">Search</div></a> -->
+                        <a class="tab-link" href="../add">
+                            <div class="text-block">Library</div></a>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <h2>{{name}}</h2>
+                            </div>
+                            <img src="{{imageURL}}" width="350px" height="350px" alt="Artist Image" class="img-responsive">
+                        </div>
+                        <div>
+                            <div class="bio">
+                                <h4>Genre:</h4><p>{{genre}}</p>
+                                <h4>Description:</h4><p>{{description}}</p>
+                            </div>
+                        </div>
+                        <div>
+                            {{#if inLibrary}}
+                            <div><a href="../add/{{name}}"><h3>Remove From Library</h3></a></div>
+                            {{else}}
+                            <div><a href="../add/{{name}}"><h3>Add to Library</h3></a></div>
+                            {{/if}}
+                            <div><a href="../likeThis/{{name}}"><h3>More Like This</h3></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
             <script src="../js/jquery-1.11.0.js"></script>
             <script src="../js/bootstrap.js"></script>
