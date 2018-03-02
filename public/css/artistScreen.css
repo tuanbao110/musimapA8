@@ -447,3 +447,10 @@ div {
   text-align          : left;
   line-height         : 29.0px;
 }
+
+.artist-screen .img-responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

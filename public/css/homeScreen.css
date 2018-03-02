@@ -48,7 +48,7 @@ margin: 0px;
 
 /* Searchbar Animation for fun */
 input[type=text] {
-    width: 105px;
+    width: 205px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
 }
@@ -179,4 +179,41 @@ input[type=text]:focus {
 }
 .text-block {
   text-align: center;
+}
+
+.img-responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 20px;
+    width: 30%;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+	text-align:center;
+}
+
+.genre{
+    margin-left: 15%;
+    margin-right:auto;
+
+}
+.description{
+    margin-left:15%;
+    margin-right: 15%;
+}
+
+.bio{
+	line-height: auto;
+}
+
+h4, p {
+  display: inline;
+}
+
+.artists{
+	margin-left:15%;
+    margin-right: 15%;
 }
